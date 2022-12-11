@@ -6,6 +6,7 @@ module.exports = {
     config.output.libraryTarget = "umd";
     config.output.chunkLoadingGlobal = `webpackJsonp_${name}`;
     config.output.globalObject = "window";
+    config.output.publicPath = `http://localhost:7100/`;
 
     return config;
   },
